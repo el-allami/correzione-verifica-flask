@@ -1,0 +1,12 @@
+<form action="/sceltastazione" method = "GET">
+
+    <!-- menu a tendina -->
+    Stazioni<select name="Stazione">
+        {%for stazione in stazioni%}
+        <option value="{{stazione}}" >{{stazione}}</option>
+        {%endfor%}
+    </select>
+    </p>
+
+    <p><input type = "submit" value = "Submit" /></p>
+</form>
